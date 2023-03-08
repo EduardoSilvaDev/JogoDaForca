@@ -1,0 +1,17 @@
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\bin\Debug\net7.0\JogoDaForca.exe
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\bin\Debug\net7.0\JogoDaForca.deps.json
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\bin\Debug\net7.0\JogoDaForca.runtimeconfig.json
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\bin\Debug\net7.0\JogoDaForca.dll
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\bin\Debug\net7.0\JogoDaForca.pdb
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.csproj.AssemblyReference.cache
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.AssemblyInfoInputs.cache
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.AssemblyInfo.cs
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.dll
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\refint\JogoDaForca.dll
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.pdb
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.genruntimeconfig.cache
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\ref\JogoDaForca.dll
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Eduardo\Desktop\Code\C\jogodaforca\obj\Debug\net7.0\JogoDaForca.csproj.CopyComplete
