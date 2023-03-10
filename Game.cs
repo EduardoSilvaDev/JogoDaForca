@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using jogodaforca.Palavras;
 
 namespace jogodaforca
 {
@@ -45,48 +44,54 @@ namespace jogodaforca
                     break;
                 }
                 tentativa();
-                
-
-                
-                
             }
         }
-
         public void Layout()
         {
-            Console.Clear();
+            try{Console.Clear();}catch(Exception){}
             ShowForca();
             boneco.ShowToy(errors);
         }
         public void ShowForca()
         {
-            Console.Write
-            (   
-                Cores.Amarelo(
-                    "\n  |========"+
-                    "\n  ||      |"+
-                    "\n  ||"+
-                    "\n  ||"+
-                    "\n  ||"+
-                    "\n  ||"+
-                    "\n__||__________"
-                )
-            );
+            try
+            {
+                Console.Write
+                (   
+                    Cores.Amarelo(
+                        "\n  |========"+
+                        "\n  ||      |"+
+                        "\n  ||"+
+                        "\n  ||"+
+                        "\n  ||"+
+                        "\n  ||"+
+                        "\n__||__________"
+                    )
+                );
+            }catch(Exception){}
         }
 
         public void EspacosLetras()
         {
-            Console.SetCursorPosition(20,1);
-            Console.Write(Cores.Verde("Adivinhe a palavra"));
-            Console.SetCursorPosition(20,2);
-            Console.Write(Cores.Verde(Cores.Preto($"Dica: {categoria}")));
+            try
+            {
+                Console.SetCursorPosition(20,1);
+                Console.Write(Cores.Verde("Adivinhe a palavra"));
+                Console.SetCursorPosition(20,2);
+                Console.Write(Cores.Verde(Cores.Preto($"Dica: {categoria}")));
+            }catch(Exception){}
             
-            Console.SetCursorPosition(20,4);
-            Letras();
+            try
+            {
+                Console.SetCursorPosition(20,4);
+                Letras();
+            }catch(Exception){}
             
-            Console.SetCursorPosition(20,6);
-            Console.Write(Cores.Verde("Letras Erradas: ") + Cores.Vermelho(string.Join(", ",LetrasErradas)));
-
+            try
+            {
+                Console.SetCursorPosition(20,6);
+                Console.Write(Cores.Verde("Letras Erradas: ") + Cores.Vermelho(string.Join(", ",LetrasErradas)));
+            }catch(Exception){}
         }
         public void Letras()
         {
@@ -96,30 +101,27 @@ namespace jogodaforca
                 else Console.Write($" {c.ToString().ToUpper()} ");
             }
         }
-        public string PalavraAleatoria(){
-            Random rnd = new Random();
-            ListasPalavras palavra = (ListasPalavras)rnd.Next(Enum.GetNames(typeof(ListasPalavras)).Length);
-            return palavra.ToString();
-        }
         public void tentativa()
         {
             string? letra="";
-            do{
-                
-                Console.SetCursorPosition(20,5);
+            string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            while(string.IsNullOrEmpty(letra)||letra.Length>1){
+                try{Console.SetCursorPosition(20,5);}catch(Exception){}
                 Console.Write("> ");
-                try{letra = Console.ReadLine()?.ToUpper()??"";}
-                catch(Exception){}
-                if(letra.Length!=1)
+                letra = Console.ReadLine()?.ToUpper()??"";
+                if(!alphabet.Contains(letra.ToUpper())||letra.Length!=1)
                 {
                     for(int i=0;i<letra.Length;i++)
                     {
-                        Console.SetCursorPosition(22+i,5);
+                        try{Console.SetCursorPosition(22+i,5);}catch(Exception){}
                         Console.Write(" ");
                     }
+                    letra="";
+                    Console.SetCursorPosition(20,7);
+                    Console.Write(Cores.Vermelho("Somente LETRAS!"));
                 }
-
-            }while(string.IsNullOrEmpty(letra)||letra.Length>1);
+                // if(!alphabet.Contains(letra))letra="";
+            }
 
             
             if(!palavra.Contains(letra)&&!LetrasErradas.Contains(letra))
@@ -142,7 +144,7 @@ namespace jogodaforca
         }
         public void GameOver(bool Win_Lose)
         {
-            Console.SetCursorPosition(60,2);
+            try{Console.SetCursorPosition(60,2);}catch(Exception){}
             Console.Write((Win_Lose)?Cores.Azul("VOCE ACERTOU!!"):Cores.Vermelho("VOCE PERDEU!"));
             Console.ReadLine();
         }

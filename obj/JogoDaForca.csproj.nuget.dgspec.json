@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eduardo\\Desktop\\Code\\C\\jogodaforca\\JogoDaForca.csproj": {}
+    "C:\\Users\\Eduardo\\Desktop\\Code\\C\\JogoDaForca\\JogoDaForca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eduardo\\Desktop\\Code\\C\\jogodaforca\\JogoDaForca.csproj": {
+    "C:\\Users\\Eduardo\\Desktop\\Code\\C\\JogoDaForca\\JogoDaForca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\jogodaforca\\JogoDaForca.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\JogoDaForca\\JogoDaForca.csproj",
         "projectName": "JogoDaForca",
-        "projectPath": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\jogodaforca\\JogoDaForca.csproj",
+        "projectPath": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\JogoDaForca\\JogoDaForca.csproj",
         "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\jogodaforca\\obj\\",
+        "outputPath": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\JogoDaForca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",

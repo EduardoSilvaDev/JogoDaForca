@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jlYDEfKyjIjfD3QT07NEIV8FN+asRe7NUBinz5iW+FTTCcJQhayunNuI3FJOyCgkrsILn9TVtuFYLCNPRXXXUA==",
+  "dgSpecHash": "hwYWGK9M4ysme5NUvO2xoOFUGJ1FCU8cF4urOTBwwxsxyZvHBh3rawWVlyv/qv9vXCy9s/BT3Jc33OphRy53ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\jogodaforca\\JogoDaForca.csproj",
+  "projectFilePath": "C:\\Users\\Eduardo\\Desktop\\Code\\C\\JogoDaForca\\JogoDaForca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eduardo\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],

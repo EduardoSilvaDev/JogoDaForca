@@ -1,39 +1,37 @@
 ﻿using System;
 using jogodaforca;
-using jogodaforca.Palavras;
 using Newtonsoft.Json;
 
 namespace JogoDaForca
 {
     class Program{
-        //falta tirar os espacos da palavras maiores
         static void Main(String[] args){
-            Console.Clear();
+            try{Console.Clear();}catch(Exception){}
+            
             Game game;
             while(true)
             {
                 switch(menu()){
-                    case 1:
-                        game = new Game();
-                    break;
                     case 2:
                         Instrucoes();
-                        game = new Game();
                     break;
                     case 0:
+                        Console.Clear();
                         Environment.Exit(0);
                     break;
                 }
-                Again();
+                game = new Game();
             }
-            
         }
         static public int menu()
         {
             int op = -1;
             while(op<0||op>2)
             {
-                Console.Clear();
+                try{
+                    Console.Clear();
+                }catch(Exception){}
+                
                 Console.WriteLine($"{Cores.Verde("Bem Vindo ao ")}{Cores.Amarelo("Jogo da Forca\n")}");
                 Console.WriteLine(Cores.Verde("1 - Comecar"));
                 Console.WriteLine(Cores.Verde("2 - Instruções"));
@@ -62,28 +60,6 @@ namespace JogoDaForca
                 Cores.Preto("\tPRESSIONE QUALQUER TECLA PARA JOGAR")
             );
             Console.ReadLine();
-        }
-        static void Again()
-        {
-            while(true)
-            {
-                int op=0;
-                Console.Clear();
-                try
-                {
-                    Console.WriteLine(Cores.Verde("Jogar de novo?\n"));
-                    Console.WriteLine(Cores.Azul("1 - Sim"));
-                    Console.WriteLine(Cores.Vermelho("2 - Não"));
-                    Console.Write(Cores.Amarelo("> "));
-                    op = Convert.ToInt32(Console.ReadLine());
-                }catch(Exception){op=0;}
-                if(op == 1)break;
-                else 
-                {
-                    Console.Clear();
-                    Environment.Exit(0);
-                }
-            }
         }
     }
 }
